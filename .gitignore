@@ -1,0 +1,27 @@
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+
+#############
+## OSX
+#############
+
+.DS_Store
+
+
+#############
+## Compass & Fire.app
+#############
+
+.sass-cache
+.scssc
+.sassc
+.coffeescript-cache
+fire_app_log.txt

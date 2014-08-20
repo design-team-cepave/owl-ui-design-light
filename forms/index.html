@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Shutt &mdash; professional CSS-framework
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="/css/combined.css" media="all" rel="stylesheet" type="text/css" /><script src="/js/combined.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container"><!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/combined.min.css" />
+        <script src="../../js/combined.min.js"></script>
+    </head>
+    <body class="shuttpage">
+        <div class="wrap">
+            <header id="header">
+                <div id="logo"><a href="../../index.html"></a></div>
+            </header>
+        </div>
+        <div class="wrap">
+            <header id="subnav-box">
+                <h2><a href="../index.html">shutt</a></h2>
+                <nav id="subnav" class="navbar">
+                    <ul><li><a href="../index.html">Download</a></li><li><a href="../typography/index.html">Documentation</a></li></ul>
+                </nav>
+            </header>
+        </div>
+        <div class="wrap">
+            <div id="main">
+                <aside id="side">
+                    <nav id="side-nav" class="nav">
+                        <ul><li><a href="../typography/index.html">Typography</a></li><li><a href="../grid/index.html">Grid</a></li><li><a href="../blocks/index.html">Blocks</a></li><li><a href="../tables/index.html">Tables</a></li><li><span>Forms</span></li><li><a href="../navigation/index.html">Navigation</a></li><li><a href="../buttons/index.html">Buttons</a></li><li><a href="../helpers/index.html">Helpers</a></li><li><a href="../mixins/index.html">Mixins</a></li></ul>
+                    </nav>
+                </aside>
+                <div id="area">
+                    <h1 id="shutt-head">Forms</h1>
+                    <p>shutt Forms only utilize native tags while remaining most flexible in building most complicated forms.</p>
+                    <form method="post" action="" class="forms" autocomplete="off">
+                        <label>
+                            Email
+                            <input type="email" class="width-50"  autocomplete="off" />
+                        </label>
+                        <label>
+                            Password
+                            <input type="password" class="width-50"  autocomplete="off" />
+                        </label>
+                        <p>
+                        <button class="btn btn-green">Log in</button> <button class="btn">Cancel</button>
+                        </p>
+                    </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label&gt;
+        Email
+        &lt;input type=&quot;email&quot; name=&quot;user-email&quot; class=&quot;width-50&quot; /&gt;
+    &lt;/label&gt;
+    &lt;label&gt;
+        Password
+        &lt;input type=&quot;password&quot; name=&quot;user-password&quot; class=&quot;width-50&quot; /&gt;
+    &lt;/label&gt;
+    &lt;p&gt;
+        &lt;button class=&quot;btn-green&quot;&gt;Log in&lt;/button&gt;
+        &lt;button class=&quot;btn&quot;&gt;Cancel&lt;/button&gt;
+    &lt;/p&gt;
+&lt;/form&gt;
+</pre>
+                    <p>Need more simplicity? Ok, no problem.</p>
+                    <form method="post" action="" class="forms">
+                        <label>
+                            <input type="email" placeholder="Email" class="width-50"  />
+                        </label>
+                        <label>
+                            <input type="password" placeholder="Password" class="width-50"  />
+                        </label>
+                        <p>
+                        <button class="btn btn-green width-50">Log in</button>
+                        </p>
+                    </form>
+<pre class="prettyprint">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;email&quot; name=&quot;user-email&quot; placeholder=&quot;Email&quot; class=&quot;width-50&quot; /&gt;
+    &lt;/label&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;password&quot; name=&quot;user-password&quot; placeholder=&quot;Password&quot; class=&quot;width-50&quot; /&gt;
+    &lt;/label&gt;
+    &lt;p&gt;
+        &lt;button class=&quot;btn-green width-50&quot;&gt;Log in&lt;/button&gt;
+    &lt;/p&gt;
+&lt;/form&gt;
+</pre>
+                    <h4 class="shutt-docs-head">Input states</h4>
+                    <form method="post" action="" class="forms">
+                        <label>
+                            Error  <span class="error">Error</span>
+                            <input type="text" name="state-error" class="input-error width-40"  />
+                        </label>
+                        <label>
+                            Success  <span class="success">Success</span>
+                            <input type="text" name="state-success" class="input-success width-40" />
+                        </label>
+                        <label>
+                            Gray
+                            <input type="text" name="state-gray" class="input-gray width-40" />
+                        </label>
+                    </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label&gt;
+        Error  &lt;span class=&quot;error&quot;&gt;Error&lt;/span&gt;
+        &lt;input type=&quot;text&quot; name=&quot;state-error&quot; class=&quot;input-error width-40&quot;  /&gt;
+    &lt;/label&gt;
+    &lt;label&gt;
+        Success  &lt;span class=&quot;success&quot;&gt;Success&lt;/span&gt;
+        &lt;input type=&quot;text&quot; name=&quot;state-success&quot; class=&quot;input-success width-40&quot; /&gt;
+    &lt;/label&gt;
+    &lt;label&gt;
+        Gray
+        &lt;input type=&quot;text&quot; name=&quot;state-gray&quot; class=&quot;input-gray width-40&quot; /&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</pre>
+                    <h4 class="shutt-docs-head">Required</h4>
+                    <form method="post" action="" class="forms">
+                        <label>
+                            Email <span class="req">*</span>
+                            <input type="email" name="user-email" class="width-50"  />
+                        </label>
+                    </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label&gt;
+        Email &lt;span class=&quot;req&quot;&gt;*&lt;/span&gt;
+        &lt;input type=&quot;email&quot; name=&quot;user-email&quot; class=&quot;width-50&quot;  /&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</pre>
+                    <h4 class="shutt-docs-head">Input descriptions</h4>
+                    <form method="post" action="" class="forms">
+                        <label>
+                            Name <span class="forms-desc">Always nice to feel important.</span>
+                            <input type="text" name="user-name" class="width-50"  />
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" name="user-email" class="width-50"  />
+                            <div class="forms-desc">Please enter your email.</div>
+                        </label>
+                    </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label&gt;
+        Name &lt;span class=&quot;forms-desc&quot;&gt;Always nice to feel important.&lt;/span&gt;
+        &lt;input type=&quot;text&quot; name=&quot;user-name&quot; class=&quot;width-50&quot;  /&gt;
+    &lt;/label&gt;
+    &lt;label&gt;
+        Email
+        &lt;input type=&quot;email&quot; name=&quot;user-email&quot; class=&quot;width-50&quot;  /&gt;
+        &lt;div class=&quot;forms-desc&quot;&gt;Please enter your email.&lt;/div&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</pre>
+                    <h4 class="shutt-docs-head">Form sections</h4>
+                    <form method="post" action="" class="forms">
+                        <label>
+                            Name
+                            <input type="text" name="user-name" class="width-50"  />
+                        </label>
+                        <fieldset>
+                            <legend>Login data</legend>
+                            <label>
+                                Email
+                                <input type="email" class="width-50"  />
+                            </label>
+                            <label>
+                                Password
+                                <input type="password" class="width-50"  />
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>About</legend>
+                            <label>
+                                <textarea name="user-about" class="width-100" rows="5"></textarea>
+                            </label>
+                        </fieldset>
+                        <p>
+                        <input type="submit" class="btn" value="Submit" />
+                        </p>
+                    </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label&gt;
+        Name
+        &lt;input type=&quot;text&quot; name=&quot;user-name&quot; class=&quot;width-50&quot;  /&gt;
+    &lt;/label&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Login data&lt;/legend&gt;
+        &lt;label&gt;
+            Email
+            &lt;input type=&quot;email&quot; name=&quot;user-email&quot; class=&quot;width-50&quot;  /&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            Password
+            &lt;input type=&quot;password&quot; name=&quot;user-password&quot; class=&quot;width-50&quot;  /&gt;
+        &lt;/label&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;About&lt;/legend&gt;
+        &lt;label&gt;
+            &lt;textarea name=&quot;user-about&quot; class=&quot;width-100&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;
+        &lt;/label&gt;
+    &lt;/fieldset&gt;
+    &lt;p&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;Submit&quot; /&gt;
+    &lt;/p&gt;
+&lt;/form&gt;
+</pre>
+                    <h4 class="shutt-docs-head">Checkboxes</h4>
+                    <p>Set <code>.forms-list</code> class for the list.</p>
+                    <form method="post" action="" class="forms">
+                        <ul class="forms-list">
+                            <li>
+                                <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                                <label for="checkbox-1">Check 1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                                <label for="checkbox-2">Check 2</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                                <label for="checkbox-3">Check 3</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                                <label for="checkbox-4">Check 4</label>
+                            </li>
+                        </ul>
+                    </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+   &lt;ul class=&quot;forms-list&quot;&gt;
+        &lt;li&gt;
+           &lt;input type=&quot;checkbox&quot; name=&quot;checkbox-1&quot; id=&quot;checkbox-1&quot;&gt;
+           &lt;label for=&quot;checkbox-1&quot;&gt;Check 1&lt;/label&gt;
+        &lt;/li&gt;
+        ...
+    &lt;/ul&gt;
+&lt;/form&gt;
+</pre>
+                    <h4 class="shutt-docs-head">Inline checkboxes</h4>
+                    <p>Set <code>.forms-inline-list</code> class for the list.</p>
+                    <form method="post" action="" class="forms">
+                        <label>Please check in
+                            <ul class="forms-inline-list">
+                                <li>
+                                    <input type="checkbox" name="checkbox-5" id="checkbox-5">
+                                    <label for="checkbox-5">Check 5</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="checkbox-6" id="checkbox-6">
+                                    <label for="checkbox-6">Check 6</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="checkbox-7" id="checkbox-7">
+                                    <label for="checkbox-7">Check 7</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="checkbox-8" id="checkbox-8">
+                                    <label for="checkbox-8">Check 8</label>
+                                </li>
+                            </ul>
+                        </label>
+                    </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label&gt;Please check in
+        &lt;ul class=&quot;forms-inline-list&quot;&gt;
+            &lt;li&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;checkbox-5&quot; id=&quot;checkbox-5&quot;&gt;
+                &lt;label for=&quot;checkbox-5&quot;&gt;Check 5&lt;/label&gt;
+            &lt;/li&gt;
+            ...
+        &lt;/ul&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</pre>
+                    <p>Without label.</p>
+                    <form method="post" action="" class="forms">
+                        <ul class="forms-inline-list">
+                            <li>
+                                <input type="checkbox" name="checkbox-9" id="checkbox-9">
+                                <label for="checkbox-9">Check 9</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="checkbox-10" id="checkbox-10">
+                                <label for="checkbox-10">Check 10</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="checkbox-11" id="checkbox-11">
+                                <label for="checkbox-11">Check 11</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="checkbox-12" id="checkbox-12">
+                                <label for="checkbox-12">Check 12</label>
+                            </li>
+                        </ul>
+                    </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;ul class=&quot;forms-inline-list&quot;&gt;
+        &lt;li&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;checkbox-9&quot; id=&quot;checkbox-9&quot;&gt;
+            &lt;label for=&quot;checkbox-9&quot;&gt;Check 5&lt;/label&gt;
+        &lt;/li&gt;
+        ...
+    &lt;/ul&gt;
+&lt;/form&gt;
+</pre>
+                    <h4 class="shutt-docs-head">Options</h4>
+                    <form method="post" action="" class="forms">
+                        <ul class="forms-list">
+                            <li>
+                                <input type="radio" name="radio-1" id="radio-1">
+                                <label for="radio-1">Option 1</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-1" id="radio-2">
+                                <label for="radio-2">Option 2</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-1" id="radio-3">
+                                <label for="radio-3">Option 3</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-1" id="radio-4">
+                                <label for="radio-4">Option 4</label>
+                            </li>
+                        </ul>
+                    </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;ul class=&quot;forms-list&quot;&gt;
+        &lt;li&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;radio-1&quot; id=&quot;radio-1&quot;&gt;
+            &lt;label for=&quot;radio-1&quot;&gt;Option 1&lt;/label&gt;
+        &lt;/li&gt;
+        ...
+    &lt;/ul&gt;
+&lt;/form&gt;
+</pre>
+                    <h4 class="shutt-docs-head">More examples</h4>
+                    <form method="post" action="" class="forms">
+                        <label for="select_multi">
+                            Select multiple
+                            <select name="select-multi" class="width-50" multiple="multiple" size="10">
+                                <optgroup label="Group 1">
+                                    <option value="1">Some text goes here</option>
+                                    <option value="2">Another choice could be here</option>
+                                    <option value="3">Yet another item to be chosen</option>
+                                </optgroup>
+                                <optgroup label="Group 2">
+                                    <option value="4">Some text goes here</option>
+                                    <option value="5">Another choice could be here</option>
+                                    <option value="6">Yet another item to be chosen</option>
+                                </optgroup>
+                                <optgroup label="Group 3">
+                                    <option value="7">Some text goes here</option>
+                                    <option value="8">Another choice could be here</option>
+                                    <option value="9">Yet another item to be chosen</option>
+                                </optgroup>
+                            </select>
+                        </label>
+                    </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label for=&quot;select_multi&quot;&gt;
+        Select multiple
+        &lt;select name=&quot;select-multi&quot; class=&quot;width-50&quot; multiple=&quot;multiple&quot; size=&quot;10&quot;&gt;
+        &lt;optgroup label=&quot;Group 1&quot;&gt;
+            &lt;option value=&quot;1&quot;&gt;Some text goes here&lt;/option&gt;
+            ...
+        &lt;/optgroup&gt;
+        ...
+        &lt;/select&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</pre>
+                    <form method="post" action="" class="forms">
+                        <label>
+                            Choose date
+                            <ul class="forms-inline-list">
+                                <li>
+                                    <select><option>---</option></select>
+                                    <div class="forms-desc">Month</div>
+                                </li>
+                                <li>
+                                    <select><option>---</option></select>
+                                    <div class="forms-desc">Day</div>
+                                </li>
+                                <li>
+                                    <select><option>---</option></select>
+                                    <div class="forms-desc">Year</div>
+                                </li>
+                            </ul>
+                        </label>
+                    </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label&gt;
+        Choose date
+        &lt;ul class=&quot;forms-inline-list&quot;&gt;
+            &lt;li&gt;
+                &lt;select&gt;&lt;option&gt;---&lt;/option&gt;&lt;/select&gt;
+                &lt;div class=&quot;forms-desc&quot;&gt;Month&lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;select&gt;&lt;option&gt;---&lt;/option&gt;&lt;/select&gt;
+                &lt;div class=&quot;forms-desc&quot;&gt;Day&lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;select&gt;&lt;option&gt;---&lt;/option&gt;&lt;/select&gt;
+                &lt;div class=&quot;forms-desc&quot;&gt;Year&lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</pre>
+                    <form method="post" action="" class="forms">
+                        Phone number
+                        <ul class="forms-inline-list">
+                            <li>
+                                ( <input type="text" name="phone-prefix" size="3" /> )
+                            </li>
+                            <li>
+                                <input type="text" name="phone-number-1" size="3" />
+                            </li>
+                            - <input type="text" name="phone-number-2" size="3" />
+                        </li>
+                        <li>
+                            &nbsp;ext: <input type="text" name="phone-ext" size="3" />
+                        </li>
+                        <div class="forms-desc">Needed if there are questions about your order</div>
+                    </ul>
+                </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    Phone number
+    &lt;ul class=&quot;forms-inline-list&quot;&gt;
+        &lt;li&gt;
+            ( &lt;input type=&quot;text&quot; name=&quot;phone-prefix&quot; size=&quot;3&quot; /&gt; )
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;input type=&quot;text&quot; name=&quot;phone-number-1&quot; size=&quot;3&quot; /&gt;
+        &lt;/li&gt;
+            - &lt;input type=&quot;text&quot; name=&quot;phone-number-2&quot; size=&quot;3&quot; /&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            ext: &lt;input type=&quot;text&quot; name=&quot;phone-ext&quot; size=&quot;3&quot; /&gt;
+        &lt;/li&gt;
+        &lt;div class=&quot;forms-desc&quot;&gt;Needed if there are questions about your order&lt;/div&gt;
+    &lt;/ul&gt;
+&lt;/form&gt;
+</pre>
+                <form method="post" action="" class="forms">
+                    <label class="input-groups">
+                        <input type="text" name="search" placeholder="Search" />
+                        <span class="btn-append">
+                        <button class="btn">Go</button>
+                        </span>
+                    </label>
+                </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label class=&quot;input-groups&quot;&gt;
+        &lt;input type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;Search&quot; /&gt;
+        &lt;span class=&quot;btn-append&quot;&gt;
+            &lt;button class=&quot;btn&quot;&gt;Go&lt;/button&gt;
+        &lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</pre>
+                <form method="post" action="" class="forms">
+                    <label for="country">
+                        Country
+                        <select class="width-50">
+                            <option>---</option>
+                        </select>
+                        <div class="forms-desc">Where you from?</div>
+                    </label>
+                </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label for=&quot;country&quot;&gt;
+        Country
+        &lt;select class=&quot;width-50&quot;&gt;
+            &lt;option&gt;---&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;div class=&quot;forms-desc&quot;&gt;Where you from?&lt;/div&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</pre>
+                <form method="post" action="" class="forms">
+                    <label for="text">
+                        Text
+                        <textarea rows="4" class="width-100"></textarea>
+                    </label>
+                </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label for=&quot;text&quot;&gt;
+        Text
+        &lt;textarea rows=&quot;4&quot; class=&quot;width-100&quot;&gt;&lt;/textarea&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</pre>
+                <form method="post" action="" class="forms">
+                    <label for="text">
+                        Text
+                        <textarea rows="4" class="width-60"></textarea>
+                    </label>
+                </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label for=&quot;text&quot;&gt;
+        Text
+        &lt;textarea rows=&quot;4&quot; class=&quot;width-60&quot;&gt;&lt;/textarea&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</pre>
+                <h4 class="shutt-docs-head">Append & prepend</h4>
+                <form method="post" action="" class="forms">
+                    <label>
+                        How much is it?
+                        <div class="input-groups width-50">
+                            <span class="input-prepend">$</span>
+                            <input type="text" value="" />
+                        </div>
+                    </label>
+                </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;label&gt;
+        How much is it?
+        &lt;div class=&quot;input-groups width-50&quot;&gt;
+            &lt;span class=&quot;input-prepend&quot;&gt;$&lt;/span&gt;&lt;input type=&quot;text&quot;&gt;
+        &lt;/div&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</pre>
+                <form method="post" action="" class="forms">
+                    <div class="input-groups">
+                        <span class="input-prepend">$</span>
+                        <input type="text">
+                    </div>
+                </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;div class=&quot;input-groups&quot;&gt;
+        &lt;span class=&quot;input-prepend&quot;&gt;$&lt;/span&gt;&lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+                <form method="post" action="" class="forms">
+                    <div class="input-groups width-30">
+                        <input type="text"><span class="input-append">$</span>
+                    </div>
+                </form>
+<pre class="prettyprint shutt-docs-pre">
+&lt;form method=&quot;post&quot; action=&quot;&quot; class=&quot;forms&quot;&gt;
+    &lt;div class=&quot;input-groups width-30&quot;&gt;
+        &lt;input type=&quot;text&quot;&gt;&lt;span class=&quot;input-append&quot;&gt;$&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <footer id="footer">
+            <p>&copy; Shuttle Inc.</p>
+        </footer>
+    </div>
+</body>
+</html>
+    </div>
+  </body>
+</html>

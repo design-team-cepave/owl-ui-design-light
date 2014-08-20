@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Shutt &mdash; professional CSS-framework
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="/css/combined.css" media="all" rel="stylesheet" type="text/css" /><script src="/js/combined.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container"><!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/combined.min.css" />
+        <script src="../../js/combined.min.js"></script>
+    </head>
+    <body class="shuttpage">
+        <div class="wrap">
+            <header id="header">
+                <div id="logo"><a href="../../index.html"></a></div>
+            </header>
+        </div>
+        <div class="wrap">
+            <header id="subnav-box">
+                <h2><a href="../index.html">shutt</a></h2>
+                <nav id="subnav" class="navbar">
+                    <ul><li><a href="../index.html">Download</a></li><li><a href="../typography/index.html">Documentation</a></li></ul>
+                </nav>
+            </header>
+        </div>
+        <div class="wrap">
+            <div id="main">
+                <aside id="side">
+                    <nav id="side-nav" class="nav">
+                        <ul><li><a href="../typography/index.html">Typography</a></li><li><span>Grid</span></li><li><a href="../blocks/index.html">Blocks</a></li><li><a href="../tables/index.html">Tables</a></li><li><a href="../forms/index.html">Forms</a></li><li><a href="../navigation/index.html">Navigation</a></li><li><a href="../buttons/index.html">Buttons</a></li><li><a href="../helpers/index.html">Helpers</a></li><li><a href="../mixins/index.html">Mixins</a></li></ul>
+                    </nav>
+                </aside>
+                <div id="area">
+                    <h1 id="shutt-head">Grid</h1>
+                    <div class="griddemo">
+                        <p>shutt Grid is very simple to start.</p>
+                        <div class="units-row">
+                            <div class="unit-50">Hello world!</div>
+                            <div class="unit-50">It's shutt Grid System</div>
+                        </div>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-50&quot;&gt;Hello world&lt;/div&gt;
+    &lt;div class=&quot;unit-50&quot;&gt;It's shutt Grid System&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <h4 class="shutt-docs-head">Units</h4>
+                        <!-- 100 -->
+                        <div class="units-row">
+                            <div class="unit-100">100%</div>
+                        </div>
+                        <!-- 50 -->
+                        <div class="units-row">
+                            <div class="unit-50">50%</div>
+                            <div class="unit-50">50%</div>
+                        </div>
+                        <!-- 10/90 -->
+                        <div class="units-row">
+                            <div class="unit-10">10%</div>
+                            <div class="unit-90">90%</div>
+                        </div>
+                        <!-- 40/60 -->
+                        <div class="units-row">
+                            <div class="unit-40">40%</div>
+                            <div class="unit-60">60%</div>
+                        </div>
+                        <!-- 35/65 -->
+                        <div class="units-row">
+                            <div class="unit-35">35%</div>
+                            <div class="unit-65">65%</div>
+                        </div>
+                        <!-- 33/66 -->
+                        <div class="units-row">
+                            <div class="unit-33">33%</div>
+                            <div class="unit-66">66%</div>
+                        </div>
+                        <!-- 33 -->
+                        <div class="units-row">
+                            <div class="unit-33">33%</div>
+                            <div class="unit-33">33%</div>
+                            <div class="unit-33">33%</div>
+                        </div>
+                        <!-- 30/70 -->
+                        <div class="units-row">
+                            <div class="unit-30">30%</div>
+                            <div class="unit-70">70%</div>
+                        </div>
+                        <!-- 25/75 -->
+                        <div class="units-row units-padding">
+                            <div class="unit-25">25%</div>
+                            <div class="unit-75">75%</div>
+                        </div>
+                        <!-- 25 -->
+                        <div class="units-row">
+                            <div class="unit-25">25%</div>
+                            <div class="unit-25">25%</div>
+                            <div class="unit-25">25%</div>
+                            <div class="unit-25">25%</div>
+                        </div>
+                        <!-- 20/80 -->
+                        <div class="units-row units-mobile-50">
+                            <div class="unit-20">20%</div>
+                            <div class="unit-80">80%</div>
+                        </div>
+                        <!-- 20 -->
+                        <div class="units-row">
+                            <div class="unit-20">20%</div>
+                            <div class="unit-20">20%</div>
+                            <div class="unit-20">20%</div>
+                            <div class="unit-20">20%</div>
+                            <div class="unit-20">20%</div>
+                        </div>
+                        <h4 class="shutt-docs-head">How it works</h4>
+                        <p class="pause">First, create a row that will contain blocks.</p>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row&quot;&gt;
+&lt;/div&gt;
+</pre>
+                        <p class="pause">Now add your desired number of blocks with appropriate sizes.</p>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <p class="pause">An example of multiple rows.</p>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-25&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-25&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-25&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-25&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <p class="pause">By default, each row has bottom margin of 1.618em, and if you don’t need this margin, do the following:</p>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row end&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <p class="pause">
+                        You can set any padding to the blocks using styles.
+                        Also, to make development faster and easier, you can use built-in class <code>units-padding</code> that provides block padding of 1.618em.
+                        </p>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row units-padding&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <p class="pause">
+                        If you wish to add blocks without padding on the left and right, use&nbsp;<code>units-split</code>&nbsp;class:
+                        </p>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row units-split&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <p class="pause">
+                        On mobile devices, all blocks will have 100% width for adaptiveness.
+                        If you need more precise controls over the width, use <code>units-mobile-50</code> class.
+                        It allows you to set 50% width on mobile devices for specific blocks.
+                        </p>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row units-mobile-50&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <p class="pause">
+                        If you need to wrap the whole layout or merge some rows, use <code>units-container</code>.
+                        This class is specifically developed for such use.
+                        You can give it any padding, margins or any other styles.</p>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-container&quot;&gt;
+    &lt;div class=&quot;units-row&quot;&gt;
+        &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <!-- SPLIT -->
+                        <h4 class="shutt-docs-head">Split units</h4>
+                        <!-- 40/60 -->
+                        <div class="units-row units-split">
+                            <div class="unit-40">40%</div>
+                            <div class="unit-60">60%</div>
+                        </div>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row units-split&quot;&gt;
+    &lt;div class=&quot;unit-40&quot;&gt;40%&lt;/div&gt;
+    &lt;div class=&quot;unit-60&quot;&gt;60%&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <!-- 100 -->
+                        <div class="units-row units-split">
+                            <div class="unit-100">100%</div>
+                        </div>
+                        <!-- 50 -->
+                        <div class="units-row units-split">
+                            <div class="unit-50">50%</div>
+                            <div class="unit-50">50%</div>
+                        </div>
+                        <!-- 40/60 -->
+                        <div class="units-row units-split">
+                            <div class="unit-40">40%</div>
+                            <div class="unit-60">60%</div>
+                        </div>
+                        <!-- 33/66 -->
+                        <div class="units-row units-split">
+                            <div class="unit-33">33%</div>
+                            <div class="unit-66">66%</div>
+                        </div>
+                        <!-- 33 -->
+                        <div class="units-row units-split">
+                            <div class="unit-33">33%</div>
+                            <div class="unit-33">33%</div>
+                            <div class="unit-33">33%</div>
+                        </div>
+                        <!-- 30/70 -->
+                        <div class="units-row units-split">
+                            <div class="unit-30">30%</div>
+                            <div class="unit-70">70%</div>
+                        </div>
+                        <!-- 25/75 -->
+                        <div class="units-row units-split units-padding">
+                            <div class="unit-25">25%</div>
+                            <div class="unit-75">75%</div>
+                        </div>
+                        <!-- 25 -->
+                        <div class="units-row units-split">
+                            <div class="unit-25">25%</div>
+                            <div class="unit-25">25%</div>
+                            <div class="unit-25">25%</div>
+                            <div class="unit-25">25%</div>
+                        </div>
+                        <!-- 20/80 -->
+                        <div class="units-row units-split units-mobile-50">
+                            <div class="unit-20">20%</div>
+                            <div class="unit-80">80%</div>
+                        </div>
+                        <!-- 20 -->
+                        <div class="units-row units-split">
+                            <div class="unit-20">20%</div>
+                            <div class="unit-20">20%</div>
+                            <div class="unit-20">20%</div>
+                            <div class="unit-20">20%</div>
+                            <div class="unit-20">20%</div>
+                        </div>
+                        <!-- NESTED -->
+                        <h4 class="shutt-docs-head">Nested units</h4>
+                        <div class="units-row">
+                            <div class="unit-50 unit-demo-zero">
+                                <div class="units-row end units-demo-light">
+                                    <div class="unit-20">20%</div>
+                                    <div class="unit-80">80%</div>
+                                </div>
+                                <div class="units-row end">
+                                    <div class="unit-70">70%</div>
+                                    <div class="unit-30">30%</div>
+                                </div>
+                            </div>
+                            <div class="unit-50 unit-demo-zero">
+                                <div class="units-row end units-demo-light">
+                                    <div class="unit-25">25%</div>
+                                    <div class="unit-25">25%</div>
+                                    <div class="unit-25">25%</div>
+                                    <div class="unit-25">25%</div>
+                                </div>
+                                <div class="units-row end">
+                                    <div class="unit-20">20%</div>
+                                    <div class="unit-20">20%</div>
+                                    <div class="unit-20">20%</div>
+                                    <div class="unit-20">20%</div>
+                                    <div class="unit-20">20%</div>
+                                </div>
+                            </div>
+                        </div>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-50&quot;&gt;
+        &lt;div class=&quot;units-row end&quot;&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;20%&lt;/div&gt;
+            &lt;div class=&quot;unit-80&quot;&gt;80%&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;units-row end&quot;&gt;
+            &lt;div class=&quot;unit-70&quot;&gt;70%&lt;/div&gt;
+            &lt;div class=&quot;unit-30&quot;&gt;30%&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;unit-50&quot;&gt;
+        &lt;div class=&quot;units-row end&quot;&gt;
+            &lt;div class=&quot;unit-25&quot;&gt;25%&lt;/div&gt;
+            &lt;div class=&quot;unit-25&quot;&gt;25%&lt;/div&gt;
+            &lt;div class=&quot;unit-25&quot;&gt;25%&lt;/div&gt;
+            &lt;div class=&quot;unit-25&quot;&gt;25%&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;units-row end&quot;&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;20%&lt;/div&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;20%&lt;/div&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;20%&lt;/div&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;20%&lt;/div&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;20%&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <!-- CENTERED -->
+                        <h4 class="shutt-docs-head">Centered</h4>
+                        <div class="units-row">
+                            <div class="unit-centered unit-40">40%</div>
+                        </div>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-centered unit-40&quot;&gt;40%&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <!-- PUSH Right -->
+                        <h4 class="head-toc" id="toc-push-right">Push right</h4>
+                        <div class="units-row">
+                            <div class="unit-push-right unit-50">50%</div>
+                        </div>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-push-right unit-50&quot;&gt;50%&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <!-- Push -->
+                        <h4 class="shutt-docs-head">Push by unit</h4>
+                        <!-- push 50 -->
+                        <div class="units-row">
+                            <div class="unit-push-50 unit-20">20%</div>
+                        </div>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-push-50 unit-20&quot;&gt;20%&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                        <!-- push 20 -->
+                        <div class="units-row">
+                            <div class="unit-push-20 unit-80">80%</div>
+                        </div>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-push-20 unit-80&quot;&gt;80%&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <footer id="footer">
+                <p>&copy; Shuttle Inc.</p>
+            </footer>
+        </div>
+    </body>
+</html>
+    </div>
+  </body>
+</html>

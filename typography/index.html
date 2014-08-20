@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Shutt &mdash; professional CSS-framework
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="/css/combined.css" media="all" rel="stylesheet" type="text/css" /><script src="/js/combined.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container"><!DOCTYPE html>
+<html>
+    <head>
+        <title>Typography</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/combined.min.css" />
+        <script src="../../js/combined.min.js"></script>
+    </head>
+    <body class="shuttpage">
+        <div class="wrap">
+            <header id="header">
+                <div id="logo"><a href="../../index.html"></a></div>
+            </header>
+        </div>
+        <div class="wrap">
+            <header id="subnav-box">
+                <h2><a href="../index.html">shutt</a></h2>
+                <nav id="subnav" class="navbar">
+                    <ul><li><a href="../index.html">Download</a></li><li><span>Documentation</span></li></ul>
+                </nav>
+            </header>
+        </div>
+        <div class="wrap">
+            <div id="main">
+                <aside id="side">
+                    <nav id="side-nav" class="nav">
+                        <ul><li><span>Typography</span></li><li><a href="../grid/index.html">Grid</a></li><li><a href="../blocks/index.html">Blocks</a></li><li><a href="../tables/index.html">Tables</a></li><li><a href="../forms/index.html">Forms</a></li><li><a href="../navigation/index.html">Navigation</a></li><li><a href="../buttons/index.html">Buttons</a></li><li><a href="../helpers/index.html">Helpers</a></li><li><a href="../mixins/index.html">Mixins</a></li></ul>
+                    </nav>
+                </aside>
+                <div id="area">
+                    <h1 id="shutt-head">Typography / 文字排版</h1>
+                    <h1>Header 1 / 標題 1</h1>
+<pre class="prettyprint">
+&lt;h1&gt;Header 1&lt;/h1&gt;
+
+&lt;h1&gt;標題 1&lt;/h1&gt;
+</pre>
+                    <h2>Header 2 / 標題 2</h2>
+<pre class="prettyprint">
+&lt;h2&gt;Header 2&lt;/h2&gt;
+
+&lt;h1&gt;標題 2&lt;/h1&gt;
+</pre>
+                    <h3>Header 3 / 標題 3</h3>
+<pre class="prettyprint">
+&lt;h3&gt;Header 3&lt;/h3&gt;
+
+&lt;h1&gt;標題 3&lt;/h1&gt;
+</pre>
+                    <h4>Header 4 / 標題 4</h4>
+<pre class="prettyprint">
+&lt;h4&gt;Header 4&lt;/h4&gt;
+
+&lt;h1&gt;標題 4&lt;/h1&gt;
+</pre>
+                    <h5>Header 5 / 標題 5</h5>
+<pre class="prettyprint">
+&lt;h5&gt;Header 5&lt;/h5&gt;
+
+&lt;h1&gt;標題 5&lt;/h1&gt;
+</pre>
+                    <h6>Header 6 / 標題 6</h6>
+<pre class="prettyprint">
+&lt;h6&gt;Header 6&lt;/h6&gt;
+
+&lt;h1&gt;標題 6&lt;/h1&gt;
+</pre>
+                <hgroup>
+                    <h1>Header 1 / 標題 1</h1>
+                    <h1 class="subheading">Subheading 1 / 子標題1</h1>
+                </hgroup>
+<pre class="prettyprint">
+&lt;hgroup&gt;
+    &lt;h1&gt;Header 1&lt;/h1&gt;
+    &lt;h1 class=&quot;subheading&quot;&gt;Subheading 1&lt;/h1&gt;
+&lt;/hgroup&gt;
+</pre>
+                <hgroup>
+                    <h2>Header 2 / 標題 2</h2>
+                    <h2 class="subheading">Subheading 2 / 子標題2</h2>
+                </hgroup>
+<pre class="prettyprint">
+&lt;hgroup&gt;
+    &lt;h2&gt;Header 2&lt;/h2&gt;
+    &lt;h2 class=&quot;subheading&quot;&gt;Subheading 2&lt;/h2&gt;
+&lt;/hgroup&gt;
+</pre>
+                <hgroup>
+                    <h3>Header 3 / 標題 3</h3>
+                    <h3 class="subheading">Subheading 3 / 子標題3</h3>
+                </hgroup>
+<pre class="prettyprint">
+&lt;hgroup&gt;
+    &lt;h3&gt;Header 3&lt;/h3&gt;
+    &lt;h3 class=&quot;subheading&quot;&gt;Subheading 3&lt;/h3&gt;
+&lt;/hgroup&gt;
+</pre>
+                <hgroup>
+                    <h4>Header 4 / 標題 4</h4>
+                    <h4 class="subheading">Subheading 4 / 子標題4</h4>
+                </hgroup>
+<pre class="prettyprint">
+&lt;hgroup&gt;
+    &lt;h4&gt;Header 4&lt;/h4&gt;
+    &lt;h4 class=&quot;subheading&quot;&gt;Subheading 4&lt;/h4&gt;
+&lt;/hgroup&gt;
+</pre>
+                <hgroup>
+                    <h5>Header 5 / 標題 5</h5>
+                    <h5 class="subheading">Subheading 5 / 子標題5</h5>
+                </hgroup>
+<pre class="prettyprint">
+&lt;hgroup&gt;
+    &lt;h5&gt;Header 5&lt;/h5&gt;
+    &lt;h5 class=&quot;subheading&quot;&gt;Subheading 5&lt;/h5&gt;
+&lt;/hgroup&gt;
+</pre>
+                <!-- LEAD -->
+                <h4 class="shutt-docs-head">Lead / 前文</h4>
+                <h4 class="subheading">字體稍放大</h4>
+                <p class="lead">
+                    Facilis rem asperiores et. voluptas ipsam nostrum laborum porro in consectetur ratione nisi eos. vero possimus veniam consequatur deleniti et dicta architecto est dicta in consectetur eligendi. nihil sint iure doloremque iste minus corrupti alias eum voluptatem fuga ducimus provident maxime. dolor velit quia velit delectus aut suscipit et sunt numquam perferendis ipsum nostrum molestiae ab
+                    奏起悲壯的進行曲。他倆疲倦了，也就分外著急，包圍住這人世間，實在想不到！嬉嬉譁譁地跑去了。但這是所謂大勢，兄弟們到這樣時候，抹著一縷兩縷白雲，不過隨意做作而已，不教臉紅而已。明夜沒得再看啦！２２８運去台中！
+
+和他們做新過年。也不上你的甜！多有一百倍以上。那不知去處的前途，將要千圓。
+                </p>
+<pre class="prettyprint">
+&lt;p class=&quot;lead&quot;&gt;更多的文字內容...&lt;/p&gt;
+</pre>
+                <!-- PARAGRAPHS -->
+                <h4 class="shutt-docs-head">Paragraphs / 文字段落標籤</h4>
+                <p>
+                    Explicabo id accusamus qui molestiae vel aut. qui non corporis dolores voluptatem in rerum facilis veritatis nesciunt eius eum sed sit. mollitia et voluptas soluta ipsum et ratione laborum neque in eum minus
+                    咖啡苦了一點，台北市信義區2級。葡萄柚最棒了！這是如何地悲悽！汝算不到，來--來！不論什麼階級的人，也不上你的甜！下了18顆，有沒有人要揪團！來--來！
+
+也可以回答不喜歡。葡萄柚最棒了！陷人的泥澤，又受了他們一頓罵！包圍住這人世間，本日連假第三天，放射到地平線以外，也須為著子孫鬥爭。漏射到地上。
+                </p>
+<pre class="prettyprint shutt-docs-pre">
+&lt;p&gt;更多的文字內容...&lt;/p&gt;
+</pre>
+                <!-- ADDRESS -->
+                <address>
+                    <strong>Address Tag / 地址標籤</strong><br />
+                    PO Box 114<br>
+                    Neihu, Taipei City<br>
+                    ROC<br>
+                </address>
+<pre class="prettyprint shutt-docs-pre">
+&lt;address&gt;
+    &lt;strong&gt;Address Tag&lt;/strong&gt;&lt;br /&gt;
+    PO Box 87523&lt;br&gt;
+    Vancouver, WA 98687&lt;br&gt;
+    USA&lt;br&gt;
+&lt;/address&gt;
+</pre>
+                <!-- INLINE -->
+                <h4 class="shutt-docs-head">Inline elements / 行內元素</h4>
+                <p><abbr title="Cascading Style Sheets">CSS / 縮寫</abbr> &mdash; <code>&lt;abbr&gt;</code></p>
+                <p><cite>Origin of Species / 引用，如：作品的標題</cite> &mdash; <code>&lt;cite&gt;</code></p>
+                <p><code>Code tag / 程式碼</code> &mdash; <code>&lt;code&gt;</code></p>
+                <p><i>Italic / 斜體</i> &mdash; <code>&lt;i&gt;</code></p>
+                <p><em>Emphasis/ 強調、粗體外觀</em> &mdash; <code>&lt;em &gt;</code></p>
+                <p><mark>Mark text / 標記</mark> &mdash; <code>&lt;mark&gt;</code></p>
+                <p><kbd>Cmd + Shift + i / 標示鍵盤鍵</kbd> &mdash; <code>&lt;kbd&gt;</code></p>
+                <p><strong>Highlighted text / 重要的</strong> &mdash; <code>&lt;strong&gt;</code></p>
+                <p><b>Bold text / 粗體外觀、強調</b> &mdash; <code>&lt;b&gt;</code></li>
+                <p><del>Deleted text / 刪除號</del> &mdash; <code>&lt;del&gt;</code></p>
+                <p>上標<sup>superscript</sup> &mdash; <code>&lt;sup&gt;</code></p>
+                <p>下標<sub>subscript</sub> &mdash; <code>&lt;sub&gt;</code></p>
+                <p><small>small text / 旁注，縮小外觀</small> <code>&lt;small&gt;</code></p>
+                <!-- BLOCKQUOTES -->
+                <h4 class="shutt-docs-head">Blockquotes / 引用</h4>
+                <blockquote>
+                    <p>Paragraph 1</p>
+                    <p>Paragraph 2</p>
+                </blockquote>
+<pre class="prettyprint kube-docs-pre">
+&lt;blockquote&gt;
+    &lt;p&gt;Paragraph 1&lt;/p&gt;
+    &lt;p&gt;Paragraph 2&lt;/p&gt;
+&lt;/blockquote&gt;
+</pre>
+
+                <blockquote>Animi ullam saepe numquam qui aut porro saepe ab et quia. quo aut sapiente harum totam in voluptate voluptatem tempora architecto. veritatis necessitatibus nihil omnis quam quam consequatur dolor nobis provident soluta dolor omnis et. omnis id est quas nemo quae maiores iusto et illo dolor facilis quia quod ipsam. quisquam officia voluptatum est consectetur sunt similique quia recusandae sunt nostrum reprehenderit. omnis voluptate voluptates quasi fugit qui. doloribus maxime enim dolor deleniti tempore voluptate illo unde aut dolorem aliquid inventore incidunt明夜沒得再看啦！盲目地前進！新年的一日，就是金錢。盲目地前進！繞來穿去。</blockquote>
+<pre class="prettyprint kube-docs-pre">
+&lt;blockquote&gt;更多的文字內容...&lt;/blockquote&gt;
+</pre>
+                <h4 class="shutt-docs-head">Author & source / 作者 & 來源</h4>
+                <p>Use <code>&lt;small&gt;</code> tag for quote's author and use <code>&lt;cite&gt;</code> tag for quote's source.</p>
+                <blockquote>
+                    <p>Possimus fuga iusto et est nulla error amet. laudantium molestias assumenda id qui sit tempore architecto ut at corporis alias reiciendis non. doloribus quia ad praesentium eos maiores dolor consequatur error voluptatem tenetur ad. voluptas aut id maxime et. sit doloremque quos occaecati incidunt dolorum sequi minus debitis體軀支持不住了，在一個晚上，精神上多有些緊張，把我們龍頭割去！繞來穿去。現在只有覺悟，鬧過別一邊去，互有參差，吃了水餃6顆，趕快走下山去！我要頂禮他啊！</p>
+                    <small>Author</small> &mdash; <cite>Source</cite>
+                </blockquote>
+<pre class="prettyprint kube-docs-pre">
+&lt;blockquote&gt;
+    &lt;p&gt;更多的文字內容...&lt;/p&gt;
+    &lt;small&gt;Author&lt;/small&gt; &amp;mdash; &lt;cite&gt;Source&lt;/cite&gt;
+&lt;/blockquote&gt;
+</pre>
+                <!-- LISTS -->
+                <h4 class="shutt-docs-head">Lists / 列表清單</h4>
+                <ul>
+                    <li>list item 1</li>
+                    <li>
+                        list item 1
+                        <ul>
+                            <li>list item 2</li>
+                            <li>
+                                list item 2
+                                <ul>
+                                    <li>list item 3</li>
+                                    <li>list item 3</li>
+                                </ul>
+                            </li>
+                            <li>list item 2</li>
+                            <li>list item 2</li>
+                        </ul>
+                    </li>
+                    <li>list item 1</li>
+                    <li>list item 1</li>
+                </ul>
+<pre class="prettyprint kube-docs-pre">
+&lt;ul&gt;
+    &lt;li&gt;list item 1&lt;/li&gt;
+    &lt;li&gt;list item 1
+        &lt;ul&gt;
+            &lt;li&gt;list item 2&lt;/li&gt;
+            &lt;li&gt;list item 2
+                &lt;ul&gt;
+                    &lt;li&gt;list item 3&lt;/li&gt;
+                    &lt;li&gt;list item 3&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;list item 2&lt;/li&gt;
+            &lt;li&gt;list item 2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;list item 1&lt;/li&gt;
+    &lt;li&gt;list item 1&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                <ol>
+                    <li>list item 1</li>
+                    <li>list item 1
+                        <ol>
+                            <li>list item 2</li>
+                            <li>
+                                list item 2
+                                <ol>
+                                    <li>list item 3</li>
+                                    <li>list item 3</li>
+                                </ol>
+                            </li>
+                            <li>list item 2</li>
+                            <li>list item 2</li>
+                        </ol>
+                    </li>
+                    <li>list item 1</li>
+                    <li>list item 1</li>
+                </ol>
+<pre class="prettyprint kube-docs-pre">
+&lt;ol&gt;
+    &lt;li&gt;list item 1&lt;/li&gt;
+    &lt;li&gt;list item 1
+        &lt;ol&gt;
+            &lt;li&gt;list item 2&lt;/li&gt;
+            &lt;li&gt;list item 2
+                &lt;ol&gt;
+                    &lt;li&gt;list item 3&lt;/li&gt;
+                    &lt;li&gt;list item 3&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;list item 2&lt;/li&gt;
+            &lt;li&gt;list item 2&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;list item 1&lt;/li&gt;
+    &lt;li&gt;list item 1&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+                <dl>
+                    <dt>Description name</dt>
+                    <dd>Description value</dd>
+                    <dt>Description name</dt>
+                    <dd>Description value</dd>
+                    <dt>Description name</dt>
+                    <dd>Description value</dd>
+                </dl>
+<pre class="prettyprint kube-docs-pre">
+&lt;dl&gt;
+    &lt;dt&gt;Description name&lt;/dt&gt;
+    &lt;dd&gt;Description value&lt;/dd&gt;
+    &lt;dt&gt;Description name&lt;/dt&gt;
+    &lt;dd&gt;Description value&lt;/dd&gt;
+    &lt;dt&gt;Description name&lt;/dt&gt;
+    &lt;dd&gt;Description value&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <footer id="footer">
+                <p>&copy; Shuttle Inc.</p>
+            </footer>
+        </div>
+    </body>
+</html>
+    </div>
+  </body>
+</html>

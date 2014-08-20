@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Shutt &mdash; professional CSS-framework
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="/css/combined.css" media="all" rel="stylesheet" type="text/css" /><script src="/js/combined.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container"><!DOCTYPE html>
+<html>
+    <head>
+        <title>Mixins</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/combined.min.css" />
+        <script src="../../js/combined.min.js"></script>
+    </head>
+    <body class="shuttpage">
+        <div class="wrap">
+            <header id="header">
+                <div id="logo"><a href="../../index.html"></a></div>
+            </header>
+        </div>
+        <div class="wrap">
+            <header id="subnav-box">
+                <h2><a href="../index.html">shutt</a></h2>
+                <nav id="subnav" class="navbar">
+                    <ul><li><a href="../index.html">Download</a></li><li><a href="../typography/index.html">Documentation</a></li></ul>
+                </nav>
+            </header>
+        </div>
+        <div class="wrap">
+            <div id="main">
+                <aside id="side">
+                    <nav id="side-nav" class="nav">
+                        <ul><li><a href="../typography/index.html">Typography</a></li><li><a href="../grid/index.html">Grid</a></li><li><a href="../blocks/index.html">Blocks</a></li><li><a href="../tables/index.html">Tables</a></li><li><a href="../forms/index.html">Forms</a></li><li><a href="../navigation/index.html">Navigation</a></li><li><a href="../buttons/index.html">Buttons</a></li><li><a href="../helpers/index.html">Helpers</a></li><li><span>Mixins</span></li></ul>
+                    </nav>
+                </aside>
+                <div id="area">
+                    <h1 id="shutt-head">Mixins</h1>
+                    <script>
+                    $(function()
+                    {
+                    $('#shutt-accordion').accordion();
+                    });
+                    </script>
+                    <div id="shutt-accordion">
+                        <!-- CLEARFIX -->
+                        <h4 class="accordion-title">clearfix</h4>
+                        <div class="accordion-panel">
+                            <p>Clearfix is a solution to floating elements remain within the parent element.</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .clearfix;
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+</pre>
+                        </div>
+                        <!-- OPACITY -->
+                        <h4 class="accordion-title">opacity</h4>
+                        <div class="accordion-panel">
+                            <p>Sets the opacity. 0 is fully transparent, 100 is opaque.</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .opacity(50);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    filter: alpha(opacity = 50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+</pre>
+                        </div>
+                        <!-- SELECTION -->
+                        <h4 class="accordion-title">selection</h4>
+                        <div class="accordion-panel">
+                            <p>Allows you to alter text selection on a page.</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.selection(255, 255, 158);
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+::selection { background: rgb(255, 255, 158); }
+::-moz-selection { background: rgb(255, 255, 158); }
+img::selection { background: transparent; }
+img::-moz-selection { background: transparent; }
+</pre>
+                        </div>
+                        <!-- BOX-SIZING -->
+                        <h4 class="accordion-title">box-sizing</h4>
+                        <div class="accordion-panel">
+                            <p>Allows you to alter the CSS box model.</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .box-sizing(border-box);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+</pre>
+                        </div>
+                        <!-- GRADIENT -->
+                        <h4 class="accordion-title">gradient</h4>
+                        <div class="accordion-panel">
+                            <p>Gradient background. The first and second colors, going from bottom to top.</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .gradient(#fff, #eee);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    background-color: mix(#fff, #eee, 60%);
+    background-image: -moz-linear-gradient(top, #fff, #eee); // FF 3.6+
+    background-image: -ms-linear-gradient(top, #fff, #eee); // IE10
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#eee)); // Safari 4+, Chrome 2+
+    background-image: -webkit-linear-gradient(top, #fff, #eee); // Safari 5.1+, Chrome 10+
+    background-image: -o-linear-gradient(top, #fff, #eee); // Opera 11.10
+    background-image: linear-gradient(top, #fff, #eee); // The standard
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",#fff,#eee)); // IE9 and down
+}
+</pre>
+                        </div>
+                        <!-- BORDER-TOP-RADIUS -->
+                        <h4 class="accordion-title">border-top-radius</h4>
+                        <div class="accordion-panel">
+                            <p>Sets a border-radius for top corners.</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .border-top-radius(5px);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+</pre>
+                        </div>
+                        <!-- BORDER-BOTTOM-RADIUS -->
+                        <h4 class="accordion-title">border-bottom-radius</h4>
+                        <div class="accordion-panel">
+                            <p>Sets a border-radius for bottom corners.</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .border-bottom-radius(5px);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+</pre>
+                        </div>
+                        <!-- BORDER-RIGHT-RADIUS -->
+                        <h4 class="accordion-title">border-right-radius</h4>
+                        <div class="accordion-panel">
+                            <p>Sets a border-radius for right corners.</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .border-right-radius(5px);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+</pre>
+                        </div>
+                        <!-- BORDER-LEFT-RADIUS -->
+                        <h4 class="accordion-title">border-left-radius</h4>
+                        <div class="accordion-panel">
+                            <p>Sets a border-radius for left corners.</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .border-left-radius(5px);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+</pre>
+                        </div>
+                        <!-- BORDERED -->
+                        <h4 class="accordion-title">bordered</h4>
+                        <div class="accordion-panel">
+                            <p>Set a 1 pixel thick border that varies its color (top, right, bottom, left) on each side.</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .bordered(#eee, #f2f2f2, #ddd, #e2e2e2);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    border-top: 1px solid #eee;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #e2e2e2;
+    border-left: 1px solid #f2f2f2;
+}
+</pre>
+                        </div>
+                        <!-- RETINA-IMAGE -->
+                        <h4 class="accordion-title">retina-image</h4>
+                        <div class="accordion-panel">
+                            <p>Set a retina image: url, width, height (optional).</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .retina-image('logo.png', 100px);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    background-image: url('/logo.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .element {
+        background-image: url('/logo@2x.png');
+        background-size: 100px auto;
+    }
+}
+</pre>
+                        </div>
+                        <!-- TRANSITION -->
+                        <h4 class="accordion-title">transition</h4>
+                        <div class="accordion-panel">
+                            <p>Sets the transition duration and effect to use for any transitions (hover effects).</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .transition(width .5s ease-out);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    -webkit-transition: width .5s ease-out;
+    -moz-transition: width .5s ease-out;
+    transition: width .5s ease-out;
+}
+</pre>
+                        </div>
+                        <!-- BLUR -->
+                        <h4 class="accordion-title">blur</h4>
+                        <div class="accordion-panel">
+                            <p>Blur is a graphic filter in CSS. You can set a blur radius.</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .blur(5px);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+</pre>
+                        </div>
+                        <!-- ARROW-TOP -->
+                        <h4 class="accordion-title">arrow-top</h4>
+                        <div class="accordion-panel">
+                            <p>Sets the top arrow of element: color, size, left position (optional, default is 5px).</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .arrow-top(#ddd, 10px);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    position: relative;
+}
+.element:after {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #ddd;
+    border-width: 10px;
+    left: 5px;
+}
+</pre>
+                        </div>
+                        <!-- ARROW-BOTTOM -->
+                        <h4 class="accordion-title">arrow-bottom</h4>
+                        <div class="accordion-panel">
+                            <p>Sets the bottom arrow of element: color, size, left position (optional, default is 5px).</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .arrow-bottom(#ddd, 10px);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    position: relative;
+}
+.element:after {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #ddd;
+    border-width: 10px;
+    left: 5px;
+}
+</pre>
+                        </div>
+                        <!-- ARROW-LEFT -->
+                        <h4 class="accordion-title">arrow-left</h4>
+                        <div class="accordion-panel">
+                            <p>Sets the left arrow of element: color, size, top position (optional, default is 5px).</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .arrow-left(#ddd, 10px);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    position: relative;
+}
+.element:after {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #ddd;
+    border-width: 10px;
+    left: 5px;
+}
+</pre>
+                        </div>
+                        <!-- ARROW-RIGHT -->
+                        <h4 class="accordion-title">arrow-right</h4>
+                        <div class="accordion-panel">
+                            <p>Sets the right arrow of element: color, size, top position (optional, default is 5px).</p>
+                            <p>Write</p>
+<pre class="prettyprint shutt-docs-pre-first">
+.element {
+    .arrow-right(#ddd, 10px);
+}
+</pre>
+                            <p>Get</p>
+<pre class="prettyprint shutt-docs-pre">
+.element {
+    position: relative;
+}
+.element:after {
+    left: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-left-color: #ddd;
+    border-width: 10px;
+    left: 5px;
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <footer id="footer">
+                <p>&copy; Shuttle Inc.</p>
+            </footer>
+        </div>
+    </body>
+</html>
+    </div>
+  </body>
+</html>

@@ -110,24 +110,25 @@
                             <div class="unit-20">20%</div>
                         </div>
                         <h4 class="shutt-docs-head">How it works</h4>
-                        <p class="pause">First, create a row that will contain blocks.</p>
+                        <p class="pause">省先建立一個 contain block.</p>
+
 <pre class="prettyprint shutt-docs-pre">
 &lt;div class=&quot;units-row&quot;&gt;
 &lt;/div&gt;
 </pre>
-                        <p class="pause">Now add your desired number of blocks with appropriate sizes.</p>
-<pre class="prettyprint shutt-docs-pre">
-&lt;div class=&quot;units-row&quot;&gt;
-    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-</pre>
-                        <p class="pause">An example of multiple rows.</p>
+                        <p class="pause">接著在裡面加入區塊，並設定彼此對應的的數值。</p>
 <pre class="prettyprint shutt-docs-pre">
 &lt;div class=&quot;units-row&quot;&gt;
     &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
+</pre>
+                        <p class="pause">多欄範例:</p>
+<pre class="prettyprint shutt-docs-pre">
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&quot;units-row&quot;&gt;
     &lt;div class=&quot;unit-25&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;unit-25&quot;&gt;&lt;/div&gt;
@@ -135,7 +136,7 @@
     &lt;div class=&quot;unit-25&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-                        <p class="pause">By default, each row has bottom margin of 1.618em, and if you don’t need this margin, do the following:</p>
+                        <p class="pause">預設情況下, 每一個欄會有預設的 bottom margin , 如果不需要這個 margin, 請參考以下設定:</p>
 <pre class="prettyprint shutt-docs-pre">
 &lt;div class=&quot;units-row end&quot;&gt;
     &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
@@ -143,8 +144,7 @@
 &lt;/div&gt;
 </pre>
                         <p class="pause">
-                        You can set any padding to the blocks using styles.
-                        Also, to make development faster and easier, you can use built-in class <code>units-padding</code> that provides block padding of 1.618em.
+                        此外為更快速與容易的開發工作，亦提供了預設的 padding 值，可以使用內建的樣式 <code>units-padding</code>  設置任何區塊的 padding 值。
                         </p>
 <pre class="prettyprint shutt-docs-pre">
 &lt;div class=&quot;units-row units-padding&quot;&gt;
@@ -153,7 +153,7 @@
 &lt;/div&gt;
 </pre>
                         <p class="pause">
-                        If you wish to add blocks without padding on the left and right, use&nbsp;<code>units-split</code>&nbsp;class:
+                        如果不使用有間隔的網格區塊，使用&nbsp;<code>units-split</code>&nbsp;樣式:
                         </p>
 <pre class="prettyprint shutt-docs-pre">
 &lt;div class=&quot;units-row units-split&quot;&gt;
@@ -162,9 +162,7 @@
 &lt;/div&gt;
 </pre>
                         <p class="pause">
-                        On mobile devices, all blocks will have 100% width for adaptiveness.
-                        If you need more precise controls over the width, use <code>units-mobile-50</code> class.
-                        It allows you to set 50% width on mobile devices for specific blocks.
+                        在行動裝置上，所有的網格區塊將以 <code>width: 100%</code> 的狀態顯示，如果需要更精準控制可使用 <code>units-mobile-50</code> 與 <code>units-mobile-33</code> 樣式，它允許在特定的行動裝置分別設置 50% 兩欄，與33% 三欄顯示。
                         </p>
 <pre class="prettyprint shutt-docs-pre">
 &lt;div class=&quot;units-row units-mobile-50&quot;&gt;
@@ -173,9 +171,8 @@
 &lt;/div&gt;
 </pre>
                         <p class="pause">
-                        If you need to wrap the whole layout or merge some rows, use <code>units-container</code>.
-                        This class is specifically developed for such use.
-                        You can give it any padding, margins or any other styles.</p>
+                        使用 <code>units-container</code> 作為包裹整個版面或整合某些 rows 來進行排版。這個樣式是專為此用途而設計的。此外可以給它額外 padding、margin 或其他任何附加樣式。
+                        </p>
 <pre class="prettyprint shutt-docs-pre">
 &lt;div class=&quot;units-container&quot;&gt;
     &lt;div class=&quot;units-row&quot;&gt;

@@ -36,14 +36,14 @@ Installation
 內容
 -------------------------
 
-* [HTML5 Ready](https://github.com/jerrysdesign/compass-shutt/master/index.html)
-* [Typography](https://github.com/jerrysdesign/compass-shutt/master/sass/_typo.scss)
-* [Grid](https://github.com/jerrysdesign/compass-shutt/master/sass/_grid.scss)
-* [Forms](https://github.com/jerrysdesign/compass-shutt/master/sass/_forms.scss)
-* [Tables](https://github.com/jerrysdesign/compass-shutt/master/sass/_tables.scss)
-* [Goodies](https://github.com/jerrysdesign/compass-shutt/master/sass/_goodies.scss)
-* [Buttons](https://github.com/jerrysdesign/compass-shutt/master/sass/_buttons.scss)
-* [Mixins](https://github.com/jerrysdesign/compass-shutt/master/sass/_mixins.scss)
+* [HTML5 Ready](https://github.com/jerrysdesign/compass-shutt/blob/master/index.html)
+* [Typography](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_typo.scss)
+* [Grid](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_grid.scss)
+* [Forms](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_forms.scss)
+* [Tables](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_tables.scss)
+* [Goodies](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_goodies.scss)
+* [Buttons](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_buttons.scss)
+* [Mixins](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_mixins.scss)
 
 
 跨瀏覽器

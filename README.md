@@ -1,4 +1,4 @@
-[shutt - SCSS & Compass](https://github.com/jerrysdesign/compass-shutt/)
+[OWL-UI-Design-Light](https://github.com/design-team-cepave/owl-ui-design-light)
 =========================
 
 professional developers 的 CSS-framework
@@ -12,7 +12,7 @@ Installation
 -------------------------
 **Step 1: Download**
 
-[Download](https://github.com/jerrysdesign/compass-shutt/master) Clone 最新發布的 Repo
+[Download](https://github.com/design-team-cepave/owl-ui-design-lightmaster) Clone 最新發布的 Repo
 
 ``$ git clone  https://github.com/jerrysdesign/compass-shutt``
 
@@ -36,14 +36,14 @@ Installation
 內容
 -------------------------
 
-* [HTML5 Ready](https://github.com/jerrysdesign/compass-shutt/blob/master/index.html)
-* [Typography](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_typo.scss)
-* [Grid](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_grid.scss)
-* [Forms](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_forms.scss)
-* [Tables](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_tables.scss)
-* [Goodies](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_goodies.scss)
-* [Buttons](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_buttons.scss)
-* [Mixins](https://github.com/jerrysdesign/compass-shutt/blob/master/sass/_mixins.scss)
+* [HTML5 Ready](https://github.com/design-team-cepave/owl-ui-design-lightblob/master/index.html)
+* [Typography](https://github.com/design-team-cepave/owl-ui-design-lightblob/master/sass/_typo.scss)
+* [Grid](https://github.com/design-team-cepave/owl-ui-design-lightblob/master/sass/_grid.scss)
+* [Forms](https://github.com/design-team-cepave/owl-ui-design-lightblob/master/sass/_forms.scss)
+* [Tables](https://github.com/design-team-cepave/owl-ui-design-lightblob/master/sass/_tables.scss)
+* [Goodies](https://github.com/design-team-cepave/owl-ui-design-lightblob/master/sass/_goodies.scss)
+* [Buttons](https://github.com/design-team-cepave/owl-ui-design-lightblob/master/sass/_buttons.scss)
+* [Mixins](https://github.com/design-team-cepave/owl-ui-design-lightblob/master/sass/_mixins.scss)
 
 
 跨瀏覽器
@@ -57,5 +57,3 @@ Installation
 
 授權
 -------------------------
-
-僅供 浩鑫股份有限公司 開發團隊使用
